@@ -16,9 +16,9 @@ const NavBar = () => {
     if (state) {
       return [
         <li key="1"><i data-target="modal1" className="large material-icons modal-trigger" style={{ color: "black" }}>search</i></li>,
-        <li key="2"><Link to="/profile">Profile</Link></li>,
-        <li key="3"><Link to="/create">Create Post</Link></li>,
-        <li key="4"><Link to="/myfollowingpost">My following Posts</Link></li>,
+        <li key="2"><Link to="/profile">自己</Link></li>,
+        <li key="3"><Link to="/create">PO文</Link></li>,
+        <li key="4"><Link to="/myfollowingpost">追蹤</Link></li>,
         <li key="5">
           <button className="btn #c62828 red darken-3"
             onClick={() => {
@@ -58,7 +58,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="nav-wrapper white" >
-        <Link to={state ? "/" : "/signin"} className="brand-logo left">Instagram</Link>
+        <Link to={state ? "/" : "/signin"} className="brand-logo left">SheepCloud</Link>
         <ul id="nav-mobile" className="right ">
           {renderList()}
         </ul>
