@@ -42,9 +42,7 @@ router.put('/follow', requireLogin, (req, res) => {
     }).catch(err => {
       return res.status(422).json({ error: err })
     })
-
-  }
-  )
+  })
 })
 router.put('/unfollow', requireLogin, (req, res) => {
   User.findByIdAndUpdate(req.body.unfollowId, { //先找出偶像的ID
