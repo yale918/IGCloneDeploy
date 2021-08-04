@@ -17,8 +17,6 @@ const Home = ()=>{
         })
     },[])
 
-
-
     const likePost = (id)=>{
         fetch('/like',{
             method:"put",
